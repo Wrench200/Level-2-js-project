@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 10px;
+  font-family: "Fira Sans", sans-serif;
+  background-image: url("images/Background-body.png");
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  overflow-x: hidden;
+}
+
+.header-section {
+  background-color: teal;
+  width: 100vw;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+.header-section img.logo {
+  border-radius: 5%;
+  background-color: rgb(237, 211, 130);
+  width: 50px;
+}
+.header-section .navbar {
+  width: 85%;
+  margin: auto;
+  padding: 15px;
+  padding-left: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-section .navbar a {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+.header-section .navbar a.navlink {
+  width: 20%;
+  border-radius: 8px;
+  background-color: teal;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.header-section .navbar a.navlink:hover {
+  background-color: rgb(237, 211, 130);
+  color: black;
+  transition: 0.1s ease-in;
+  cursor: pointer;
+}
+.header-section .navbar form.header-form {
+  width: 500px;
+}
+.header-section .navbar form.header-form input[type=text] {
+  padding: 7px;
+  font-size: 15px;
+  border: 3px solid #282A35;
+  border-radius: 10px;
+  width: 50%;
+  background: white;
+  outline: 0;
+}
+.header-section .navbar form.header-form button[type=button] {
+  border-radius: 10px;
+  width: 35px;
+  padding: 7px;
+  background: white;
+  color: white;
+  font-size: 10px;
+  border: 3px solid #282A35;
+  cursor: pointer;
+}
+.header-section .navbar form.header-form button[type=button] img.searchicon {
+  width: 15px;
+}
+.header-section .navbar form.header-form button[type=button]:hover {
+  background-color: rgb(237, 211, 130);
+}
+
+main {
+  margin: 10px;
+  display: grid;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  grid-template-columns: auto auto;
+  padding: 10px;
+}
+main .image {
+  border: 0;
+}
+main .image img {
+  width: 100%;
+}
+main .info {
+  background-color: teal;
+  color: antiquewhite;
+  font-size: 1rem;
+  border: 0;
+}
+main .info .title {
+  font-size: 3rem;
+  color: rgb(237, 211, 130);
+}
+main .info .region {
+  font-size: 5px;
+}
+
+.menu {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.menus {
+  background-color: teal;
+  padding: 10px;
+}
+
+section.footer {
+  width: 100%;
+  position: relative;
+  text-align: center;
+  padding: 10px;
+  background-color: teal;
+}
+section.footer .contact-footer {
+  font-size: x-large;
+  font-style: normal;
+  color: whitesmoke;
+  margin-bottom: 2;
+  color: white;
+  text-transform: uppercase;
+}
+section.footer div.footer-div {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: auto auto auto auto;
+  gap: 60px;
+}
+section.footer div.footer-div .social-media {
+  border-radius: 7%;
+  padding: 5px;
+  width: 40px;
+}
+section.footer div.footer-div .social-media:hover {
+  background-color: rgb(233, 196, 106);
+  transition: 0.1s ease-in;
+  cursor: pointer;
+  border-radius: 7%;
+  padding: 5px;
+}
+section.footer div.footer-div a:nth-child(3) .social-media:hover {
+  background-color: rgb(233, 196, 106);
+  transition: 0.1s ease-in;
+  cursor: pointer;
+  border-radius: 60%;
+  padding: 5px;
+}
+section.footer .copywrite {
+  font-size: large;
+  color: whitesmoke;
+}
+
+p.phone a {
+  text-decoration: none;
+  color: rgb(237, 211, 130);
+}
+
+p.email a {
+  text-decoration: none;
+  color: rgb(237, 211, 130);
+}/*# sourceMappingURL=styles.css.map */

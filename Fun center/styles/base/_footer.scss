@@ -1,0 +1,57 @@
+section.footer {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    padding: 10px;
+    background-color: teal;
+
+    .contact-footer {
+        font-size: x-large;
+        font-style: normal;
+        color: whitesmoke;
+        margin-bottom: 2;
+        color: white;
+        text-transform: uppercase;
+
+
+    }
+
+    div.footer-div {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: auto auto auto auto;
+        gap: 60px;
+
+        .social-media {
+            border-radius: 7%;
+            padding: 5px;
+            width: 40px;
+
+            &:hover {
+                background-color: rgb(233, 196, 106);
+                transition: 0.1s ease-in;
+                cursor: pointer;
+                border-radius: 7%;
+                padding: 5px;
+            }
+        }
+
+
+        a:nth-child(3) {
+            .social-media {
+                &:hover {
+                    background-color: rgb(233, 196, 106);
+                    transition: 0.1s ease-in;
+                    cursor: pointer;
+                    border-radius: 60%;
+                    padding: 5px;
+                }
+            }
+        }
+
+    }
+    .copywrite{
+        font-size: large;
+        color: whitesmoke;
+    }
+}

@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@0;1&display=swap');
+
+/*basic css reset*/
+html,
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+    /*font family*/
+    background-image: url('images/Background-body.png');
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+
+header#header-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("images/footer_1.png");
+
+
+
+}
+
+img.logo {
+    margin-top: 10px;
+    border-radius: 5%;
+    background-color: rgb(237, 211, 130);
+
+
+
+}
+
+form.header-form input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 3px solid #282A35;
+    border-radius: 10px;
+    width: 80%;
+    padding-left: 25px;
+    background: white;
+    border-top-right-radius: 25;
+    border-bottom-right-radius: 25;
+    outline: 0;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+form.header-form button {
+    border-radius: 10%;
+    width: 15%;
+    padding: 10px;
+    background:teal;
+    color: white;
+    font-size: 11px;
+    border: 3px solid black;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 200px;
+    margin-bottom: 10px;
+}
+form.header-form button:hover{
+    background-color: rgb(233, 196, 106) ;
+    transition: 0.1s ease-in;
+    cursor: pointer;
+}
+.all {
+    text-align: right;
+    margin-top: 2rem;
+}
+#all {
+    width: 20%;
+    border-radius: 8px;
+    background-color:teal;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+#all:hover {
+    background-color: rgb(237, 211, 130);
+    color: black;
+    transition: 0.1s ease-in;
+    cursor: pointer;
+}
+
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 4px;
+    gap: 15px;
+}
+
+.grid-item {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.grid-item:hover {
+    background-color: rgb(233, 196, 106);
+    transition: 0.1s ease-in;
+    cursor: pointer;
+    border-radius: 5%;
+    padding-bottom: 10px;
+    padding-top: 10px;
+
+
+}
+
+
+.meals-img {
+    border-radius: 3%;
+    border-color: black;
+
+
+}
+
+section.meals p {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+section.footer {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    padding: 10px;
+    background-color:teal;
+    font-family: 'Lora', serif;
+}
+
+div.footer-div {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto auto auto;
+    gap: 60px;
+    padding: 10px;
+}
+
+
+
+
+
+.gi {
+    color: black;
+    text-decoration: none;
+    font-size: 5rem;
+}
+/*footer*/
+.contact-footer {
+    font-size: x-large;
+    font-style: normal;
+    color: whitesmoke;
+    margin-bottom: 2;
+    text-decoration: underline;
+    color: white;
+    text-transform: uppercase;
+
+
+}
+
+.copywrite {
+    font-size: large;
+    color: whitesmoke;
+}
+.social-media{
+    border-radius: 7%;
+    padding: 5px;
+}
+
+.social-media:hover {
+    background-color: rgb(233, 196, 106);
+    transition: 0.1s ease-in;
+    cursor: pointer;
+    border-radius: 7%;
+    padding: 5px;
+}
+.social-media2{
+    border-radius: 7%;
+    padding: 5px;
+}
+.social-media2:hover{
+    background-color: rgb(233, 196, 106);
+    transition: 0.1s ease-in;
+    cursor: pointer;
+    border-radius: 60%;
+    padding: 5px;
+}
+/*Footer*/
+
+
+
+
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section class="header1">
+        <header id="header-section">
+          <a href="#"> <img src="Icons/TAST.svg" class="logo" alt="logo" width="200px"></a>
+            <form class="header-form" style="width:500px">
+                <input type="text" placeholder="Search" id="search2">
+                <button type="button" id="searchbtn">
+                    <img src="Icons/search-svgrepo-com.svg" width="25px">
+                </button>
+            </form>
+        </header>
+    </section>
+    <section class="field1">
+        <div class="all">
+            <a href="All Restaurants.html"><button type="button" id="all"> All Resturants</button></a>
+        </div>
+        <section class="meals">
+            <p>MEALS</p>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <a href="Breakfast.html">
+                        <div class="polaroid">
+                            <img src="images\Breakfast.jpg" alt="Breakfast" class="meals-img" width="370rem">
+                            <div>
+                                <a class="gi" href="Breakfast.html">Breakfast</a>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="grid-item">
+                    <a href="Lunch.html">
+                        <div class="polaroid">
+                            <img src="images\lunch.jpg" alt="lunch" class="meals-img" width="370rem">
+                            <div>
+                                <a class="gi" href="Lunch.html">Lunch</a>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="grid-item">
+                    <a href="Dinner.html">
+                        <div class="polaroid">
+                            <img src="images\dinner.jpg" alt="dinner" class="meals-img" width="370rem">
+                            <div>
+                                <a class="gi" href="Dinner.html">Dinner</a>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+        </section>
+        <section class="meals">
+            <p>CUISINE</p>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <a href="Local.html">
+                        <div class="polaroid">
+                            <img src="images/achu.jpg" alt="achu" class="meals-img" width="370rem">
+                            <div>
+                                <a class="gi" href="Local.html">Local</a>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="grid-item">
+                    <a href="African.html">
+                        <div class="polaroid">
+                            <img src="images/Jollof-and-Chicken.jpg" alt="Jollof-and-Chicken" class="meals-img"
+                                width="370rem">
+                            <div class="Afr">
+                                <a class="gi" href="African.html">African</a>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="grid-item">
+                    <a href="Foreign.html">
+                        <div class="polaroid">
+
+                            <img src="images/foreign.jpg" alt="food" class="meals-img" width="370rem">
+                            <div class=frn">
+                                <a class="gi" href="Foreign.html">Foreign</a>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="meals">
+            <p>EXTRAS</p>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <a href="Dessert.html">
+                        <div class="polaroid">
+
+                            <img src="images/dessert.jpg" alt="ice cream" class="meals-img" width="370rem">
+                            <div>
+                                <a class="gi" href="Dessert.html">Dessert</a>
+                            </div>
+                    </a>
+                </div>
+            </div>
+            <div class="grid-item">
+                <a href="Beverages.html">
+                    <div class="polaroid">
+                        <img src="images/Beverages.jpg" alt="juice" class="meals-img" width="370rem">
+                        <div class="Afr">
+                             <a class="gi" href="Beverages.html">Beverages</a>
+                        </div>
+
+                    </div>
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="Wine.html">
+                    <div class="polaroid">
+                        <img src="images/wine.jpg" alt="wine" class="meals-img" width="370rem">
+                        <div class="frn">
+                            <a class="gi" href="Wine.html">Wine</a>
+                        </div>
+
+                    </div>
+                </a>
+            </div>
+        </section>
+    </section>
+</body>
+<footer>
+    <section class="footer">
+        <span class="contact-footer">Contact Us</span><br><br><br>
+        <div class="footer-div">
+            <a href=""><img src="Icons/instagram-2-1-logo-svgrepo-com.svg" class="social-media" alt="instagram-logo" width="40px"></a>
+            <a href=""><img src="Icons/facebook-svgrepo-com.svg" class="social-media" alt="facebook-logo" width="40px"></a>
+            <a href=""><img src="Icons/twitter-svgrepo-com.svg" class="social-media2" alt="twitter-logo" width="40px"></a>
+            <a href=""><img src="Icons/gmail-svgrepo-com.svg" class="social-media" alt="gmail-logo" width="40px"></a>
+        </div><br>
+        <span class="copywrite">copywrite &copy 2022 Taste.com</span>
+    </section>
+</footer>
+
+</html>
