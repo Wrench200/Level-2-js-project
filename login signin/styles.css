@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  background: url("./images/alex-haney-CAhjZmVk5H4-unsplash.jpg") rgba(0, 0, 0, 0.6);
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+
+#login {
+  display: flex;
+  height: 30rem;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border-radius: 8px;
+}
+#login form {
+  width: 90%;
+  height: 90%;
+  display: grid;
+  margin: 30px;
+  justify-content: center;
+  color: rgb(189, 186, 181);
+}
+#login form h1 {
+  font-size: 30px;
+  margin: 20px;
+  text-align: center;
+}
+#login form .form-group {
+  margin: 10px 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  height: 2rem;
+  font-size: 18px;
+}
+#login form .form-group i {
+  padding-left: 10px;
+}
+#login form .form-group input {
+  height: 100%;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  color: white;
+}
+#login form .helper-text {
+  color: red;
+}
+#login form input[type=submit] {
+  width: 100px;
+  height: 30px;
+  justify-self: center;
+  margin: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  background-color: rgb(106, 106, 238);
+  border-radius: 8px;
+  border: none;
+  color: rgb(238, 238, 238);
+  font-weight: bold;
+}
+#login form input[type=submit]:hover {
+  scale: 1.1;
+  transition: 0.2s ease-in;
+  background-color: teal;
+}
+#login form span a {
+  text-decoration: none;
+  color: rgb(106, 106, 238);
+}
+
+#signup {
+  display: flex;
+  height: 30rem;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border-radius: 8px;
+}
+#signup form {
+  width: 90%;
+  height: 90%;
+  display: grid;
+  margin: 30px;
+  justify-content: center;
+  color: rgb(189, 186, 181);
+}
+#signup form h1 {
+  font-size: 30px;
+  margin: 20px;
+  text-align: center;
+}
+#signup form .form-group {
+  margin: 10px 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  font-size: 18px;
+}
+#signup form .form-group input {
+  height: 2rem;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  color: white;
+}
+#signup form .helper-text {
+  color: red;
+}
+#signup form input[type=submit] {
+  width: 100px;
+  height: 30px;
+  justify-self: center;
+  margin: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  background-color: rgb(106, 106, 238);
+  border-radius: 8px;
+  border: none;
+  color: rgb(238, 238, 238);
+  font-weight: bold;
+}
+#signup form input[type=submit]:hover {
+  background-color: teal;
+  scale: 1.1;
+  transition: 0.2s ease-in;
+}
+#signup form span a {
+  text-decoration: none;
+  color: rgb(106, 106, 238);
+}
+
+#disabled {
+  display: none;
+}/*# sourceMappingURL=styles.css.map */
