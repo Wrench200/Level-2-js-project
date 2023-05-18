@@ -8,10 +8,52 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
         integri>
     <title>Document</title>
+    <link rel="stylesheet" href="./nav and banner styles/styles.css">
     <link rel="stylesheet" type="text/css" href="Styles.css">
 </head>
 
 <body>
+    <nav class="navbar">
+        <!-- LOGO -->
+        <div class="logo">Taste</div>
+  
+        <!-- NAVIGATION MENU -->
+        <ul class="nav-links">
+          <!-- USING CHECKBOX HACK -->
+          <input type="checkbox" id="checkbox_toggle" />
+          <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+  
+          <!-- NAVIGATION MENUS -->
+          <div class="menu">
+            <li><a href="/landing/index.html">Home</a></li>
+            <li><a href="/landing/index.html">All Restuarants</a></li>
+            <li><a href="/Contact Us/Success.html">Contact Us</a></li>
+            <li class="services">
+              <a href="">Categories</a>
+  
+              <!-- DROPDOWN MENU -->
+              <ul class="dropdown">
+                <li><a href="">Breakfast</a></li>
+                <li><a href="">Lunch</a></li>
+                <li><a href="">Dinner</a></li>
+                <li><a href="">Dessert</a></li>
+                <li><a href="">Local</a></li>
+                <li><a href="">Foreign</a></li>
+              </ul>
+            </li>
+  
+            <li>
+              <form>
+                <input type="search" />
+                <button type="submit">
+                  <img src="./icons/search (2).svg" alt="search" />
+                </button>
+              </form>
+            </li>
+            <li class="signin"><a href="#">Sign in</a></li>
+          </div>
+        </ul>
+      </nav>
     <section class="contact">
         <div class="content">
             <h2>Contact Us</h2>

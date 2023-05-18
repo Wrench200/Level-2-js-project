@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 #allres {
   padding-top: 4rem;
   display: grid;
@@ -8,12 +7,13 @@
   z-index: 2;
 }
 #allres .tittle {
-  font-size: 2rem;
+  font-size: 2.5rem;
   padding: 25px;
   text-align: center;
   text-transform: capitalize;
   text-decoration: underline;
-  color: #e91e63;
+  color: orange;
+  font-family: "Lobster", cursive;
 }
 #allres #all {
   display: flex;

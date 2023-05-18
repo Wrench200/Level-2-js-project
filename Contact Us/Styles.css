@@ -1,13 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: 'Lobster', cursive;
-    background-image: url(images/Background-body.png);
-}
+
+    
+
 
 .contact{
+    background-image: url(images/Background-body.png);
     position: relative;
     min-height: 100vh;
     padding: 50px 100px;
@@ -27,13 +24,14 @@
     font-weight: 500;
     color: orange;
     margin: 15px 0;
+    font-family: 'Lobster', cursive;
     text-decoration: underline;
 }
 
 .contact .content p{
     font-weight: 300;
     color: #333;
-    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
 }
 
 .container{
