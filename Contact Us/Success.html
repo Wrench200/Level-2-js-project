@@ -8,56 +8,56 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
         integri>
     <title>Taste/About Us</title>
-    <link rel="stylesheet" href="./nav and banner styles/styles.css">
     <link rel="stylesheet" type="text/css" href="Styles.css">
+    <link rel="stylesheet" href="./nav and banner styles/styles.css">
 </head>
 
 <body>
     <nav class="navbar">
         <!-- LOGO -->
         <div class="logo">Taste</div>
-  
+
         <!-- NAVIGATION MENU -->
         <ul class="nav-links">
-          <!-- USING CHECKBOX HACK -->
-          <input type="checkbox" id="checkbox_toggle" />
-          <label for="checkbox_toggle" class="hamburger">&#9776;</label>
-  
-          <!-- NAVIGATION MENUS -->
-          <div class="menu">
-            <li><a href="/landing/index.html">Home</a></li>
-            <li><a href="/landing/index.html">All Restuarants</a></li>
-            <li><a href="/Contact Us/Success.html">Contact Us</a></li>
-            <li class="services">
-              <a href="">Categories</a>
-  
-              <!-- DROPDOWN MENU -->
-              <ul class="dropdown">
-                <li><a href="">Breakfast</a></li>
-                <li><a href="">Lunch</a></li>
-                <li><a href="">Dinner</a></li>
-                <li><a href="">Dessert</a></li>
-                <li><a href="">Local</a></li>
-                <li><a href="">Foreign</a></li>
-              </ul>
-            </li>
-  
-            <li>
-              <form>
-                <input type="search" />
-                <button type="submit">
-                  <img src="./icons/search (2).svg" alt="search" />
-                </button>
-              </form>
-            </li>
-            <li class="signin"><a href="#">Sign in</a></li>
-          </div>
+            <!-- USING CHECKBOX HACK -->
+            <input type="checkbox" id="checkbox_toggle" />
+            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+            <!-- NAVIGATION MENUS -->
+            <div class="menu">
+                <li><a href="/landing/index.html">Home</a></li>
+                <li><a href="/landing/index.html">All Restuarants</a></li>
+                <li><a href="/Contact Us/Success.html">Contact Us</a></li>
+                <li class="services">
+                    <a href="">Categories</a>
+
+                    <!-- DROPDOWN MENU -->
+                    <ul class="dropdown">
+                        <li><a href="">Breakfast</a></li>
+                        <li><a href="">Lunch</a></li>
+                        <li><a href="">Dinner</a></li>
+                        <li><a href="">Dessert</a></li>
+                        <li><a href="">Local</a></li>
+                        <li><a href="">Foreign</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <form>
+                        <input type="search" />
+                        <button type="submit">
+                            <img src="./icons/search (2).svg" alt="search" />
+                        </button>
+                    </form>
+                </li>
+                <li class="signin"><a id="account" href="/login signin/index.html">Sign in</a></li>
+            </div>
         </ul>
-      </nav>
+    </nav>
     <section class="contact">
         <div class="content">
-            <h2>Contact Us</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe quos illum, explicabo magni,
+            <h2 id="contact us">Contact Us</h2>
+            <p id="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe quos illum, explicabo magni,
                 sed aliquid incidunt eius omnis beatae et similique quisquam
                 laboriosam quidem dolorem a laudantium consequatur inventore ipsam!</p>
         </div>
@@ -66,16 +66,16 @@
                 <div class="box">
                     <div class="text">
                         <h3>
-                            <i class="fa fa-map-marker" ></i>
+                            <i class="fa fa-map-marker"></i>
                             Address
                         </h3>
-                        <p>Hotel Serena,<br>Bali,Akwa,<br>02154</p>
+                        <p id="address">Hotel Serena,<br>Bali,Akwa,<br>02154</p>
                     </div>
                 </div>
                 <div class="box">
                     <div class="text">
-                        <h3>
-                            <i class="fa fa-phone" ></i>
+                        <h3 id="phone">
+                            <i class="fa fa-phone"></i>
                             Phone
                         </h3>
                         <p>676 88 22 08</p>
@@ -84,41 +84,46 @@
                 <div class="box">
                     <div class="text">
                         <h3>
-                            <i class="fa fa-envelope" ></i>
+                            <i class="fa fa-envelope"></i>
                             Email
                         </h3>
                         <p>laure@gmail.com</p>
                     </div>
                 </div>
             </div>
-            <div class="contactForm">
-                <form class="email" action="https://formsubmit.co/6dec10a4cb894ff8775a1747e08ff02c" method="post">
-                    <!--HoneyPot-->
-                    <input type="text" name="_honey" style="display: none;">
-                    <!--Disable captcha-->
-                    <input type="hidden" name="_captcha" value="false">
+            <div id="form" class="contactForm">
 
-                    <input type="hidden" name="_next" value="https://formsubmit.co/form/submission/Success.html">
-                    <h2>Send Message</h2>
+                <form class="email">
+                    <div id="modal"></div>
+                    <h2 id="Msg">Send Message</h2>
 
                     <div class="inputBox">
-                        <input type="text" name="" name="name" required="required">
-                        <label>Full name</label>
+                        <input id="Nm" type="text" name="name" placeholder="Jane" required="required">
+                        <label id="name">Full name</label>
                     </div>
                     <div class="inputBox">
-                        <input type="text" name="" name="email" required="required">
+                        <input id="email" type="email" name="email" placeholder="Jane@gmail.com" required="required">
                         <label>Email</label>
                     </div>
                     <div class="inputBox">
-                        <input type="text" name="" name="comments,&nbsp; questions" required="required">
-                        <label>Type your message...</label>
+                        <input id="msge" type="text" placeholder="Jane is tired" required="required">
+                        <label id="message">message...</label>
                     </div>
                     <div class="inputBox">
-                        <input type="submit" name="" value="Send">
+                        <input type="submit" id="snd" value="Send">
                     </div>
             </div>
+
             </form>
+
         </div>
+
+        <div id="lang">
+
+            <button id="eng">ENG</button>
+            <button id="fr">FR</button>
+        </div>
+        <script src="./main.js"></script>
     </section>
 </body>
 

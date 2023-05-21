@@ -1,10 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-
-    
-
-
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+   
+}
+body{
+background-image: url(images/Background-body.png);
+}
 .contact{
-    background-image: url(images/Background-body.png);
+    
+    /* height: 100vh; */
     position: relative;
     min-height: 100vh;
     padding: 50px 100px;
@@ -31,7 +37,7 @@
 .contact .content p{
     font-weight: 300;
     color: #333;
-    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .container{
@@ -39,7 +45,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 .container .contactInfo{
@@ -74,6 +80,7 @@
     color: #00bcd4;
     text-transform:capitalize;
     background: transparent;
+    font-family: "Inter Tight", sans-serif;
     
 
 }
@@ -99,7 +106,7 @@
 }
 
 .contactForm .inputBox input,
-.contactForm .inputBox textarea{
+.contactForm .inputBox textarea {
     font-family: sans-serif;
     width: 100%;
     padding: 5px 0;
@@ -109,6 +116,10 @@
     border-bottom: 2px solid #333;
     outline: none;
     background-color: transparent;
+}
+.contactForm .inputBox input::placeholder{
+    text-align: right;
+    font-size: large;
 }
 
 .contactForm .inputBox label{
@@ -148,6 +159,37 @@
     background: #e91e63;
     transition: 300ms ease-in-out;
 }
+
+#modal{
+    height: 2rem;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #ea6f98;
+
+}
+
+#lang{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1px;
+    height: 2rem;
+}
+
+#lang button{
+    height: 40px;
+    width: 40px;
+    background: #00bcd4;
+    border: none;
+    border-radius: 4px;
+}
+#lang button:hover{
+    background-color: #ea6f98;
+}
+
 
 @media (max-width: 991px){
     .contact{
