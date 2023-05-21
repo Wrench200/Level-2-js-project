@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 * {
   box-sizing: border-box;
   padding: 0;
@@ -7,6 +10,7 @@
 
 body {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -14,6 +18,16 @@ body {
   background: url("./images/alex-haney-CAhjZmVk5H4-unsplash.jpg") rgba(0, 0, 0, 0.6);
   background-size: cover;
   background-blend-mode: multiply;
+  font-family: "Inter Tight", sans-serif;
+}
+
+.logo {
+  width: 100%;
+  text-align: center;
+  margin: 2rem 0rem;
+  font-size: 5rem;
+  color: #e91e63;
+  font-family: "Lobster", cursive;
 }
 
 #login {
@@ -30,8 +44,9 @@ body {
   width: 90%;
   height: 90%;
   display: grid;
-  margin: 30px;
+  margin: 20px;
   justify-content: center;
+  align-items: center;
   color: rgb(189, 186, 181);
 }
 #login form h1 {
@@ -40,7 +55,7 @@ body {
   text-align: center;
 }
 #login form .form-group {
-  margin: 10px 30px;
+  margin: 5px 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
   border-radius: 4px;
   height: 2rem;
@@ -56,8 +71,12 @@ body {
   background-color: transparent;
   color: white;
 }
-#login form .helper-text {
-  color: red;
+#login form #helper-text2 {
+  color: rgba(243, 78, 78, 0.897);
+  font-size: larger;
+  height: -moz-max-content;
+  height: max-content;
+  text-align: center;
 }
 #login form input[type=submit] {
   width: 100px;
@@ -65,7 +84,7 @@ body {
   justify-self: center;
   margin: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-  background-color: rgb(106, 106, 238);
+  background-color: #00bcd4;
   border-radius: 8px;
   border: none;
   color: rgb(238, 238, 238);
@@ -74,11 +93,11 @@ body {
 #login form input[type=submit]:hover {
   scale: 1.1;
   transition: 0.2s ease-in;
-  background-color: teal;
+  background-color: #e91e63;
 }
 #login form span a {
   text-decoration: none;
-  color: rgb(106, 106, 238);
+  color: #00bcd4;
 }
 
 #signup {
@@ -95,8 +114,9 @@ body {
   width: 90%;
   height: 90%;
   display: grid;
-  margin: 30px;
+  margin: 10px;
   justify-content: center;
+  align-items: center;
   color: rgb(189, 186, 181);
 }
 #signup form h1 {
@@ -105,10 +125,16 @@ body {
   text-align: center;
 }
 #signup form .form-group {
-  margin: 10px 30px;
+  margin: 5px 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
   border-radius: 4px;
   font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 0 5px;
+  width: 15rem;
 }
 #signup form .form-group input {
   height: 2rem;
@@ -117,8 +143,9 @@ body {
   background-color: transparent;
   color: white;
 }
-#signup form .helper-text {
-  color: red;
+#signup form #helper-text1 {
+  color: rgba(243, 78, 78, 0.897);
+  font-size: larger;
 }
 #signup form input[type=submit] {
   width: 100px;
@@ -126,20 +153,20 @@ body {
   justify-self: center;
   margin: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-  background-color: rgb(106, 106, 238);
+  background-color: #00bcd4;
   border-radius: 8px;
   border: none;
   color: rgb(238, 238, 238);
   font-weight: bold;
 }
 #signup form input[type=submit]:hover {
-  background-color: teal;
+  background-color: #e91e63;
   scale: 1.1;
   transition: 0.2s ease-in;
 }
 #signup form span a {
   text-decoration: none;
-  color: rgb(106, 106, 238);
+  color: #00bcd4;
 }
 
 #disabled {

@@ -1,3 +1,20 @@
+let account = document.getElementById('account');
+if (sessionStorage.getItem('user')){
+  account.innerHTML='Log out'
+  account.removeAttribute('href');
+  account.style.cursor='pointer' ;
+  
+  
+  
+}
+account.addEventListener('click',(e)=>{
+ 
+
+  sessionStorage.removeItem('user');
+  window.location.reload()
+})
+
+
 let Restaurants = [
   {
     name: "Les Paletuviers",
